@@ -81,7 +81,7 @@ const stats = [
   ['Aktuelle Position', 'maexware solutions GmbH'],
   ['Fokus', 'Webentwicklung, E-Commerce, OXID, Shopware, O3'],
   ['Erstellt mit', 'Docusaurus'],
-  ['GitHub', 'maexware-danny'],
+  ['GitHub', 'dazi-web'],
 ];
 
 const skillGroups = [
