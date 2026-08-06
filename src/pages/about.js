@@ -267,7 +267,7 @@ function About() {
                   für OXID, Shopware und individuelle Webprojekte.
                 </p>
                 <div className={styles.heroLinks}>
-                  <a href="https://github.com/maexware-danny/" rel="noopener noreferrer" target="_blank">
+                  <a href="https://github.com/dazi-web/" rel="noopener noreferrer" target="_blank">
                     GitHub
                   </a>
                   <span>Erstellt mit Docusaurus</span>
@@ -296,7 +296,7 @@ function About() {
                   <span>{label}</span>
                   {label === 'GitHub' ? (
                     <strong>
-                      <a href="https://github.com/maexware-danny/" rel="noopener noreferrer" target="_blank">
+                      <a href="https://github.com/dazi-web/" rel="noopener noreferrer" target="_blank">
                         {value}
                       </a>
                     </strong>
