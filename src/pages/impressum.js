@@ -17,7 +17,7 @@ function Impressum() {
         <section className={styles.content}>
           <div className="container">
             <div className={styles.panel}>
-              <h2>Angaben gemäß § 5 TMG</h2>
+              <h2>Angaben gemäß § 5 DDG</h2>
               <address>
                 Danny Zimmer
                 <br />
