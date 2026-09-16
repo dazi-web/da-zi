@@ -28,6 +28,19 @@ Then open the forwarded DDEV URL for port `3000`, or run the same command outsid
 
 ## Webserver deployment
 
+Pushes to `main` are built and deployed automatically by the
+`Deploy website` GitHub Actions workflow. The generated files are synchronized
+to the production webroot over SSH.
+
+The workflow expects these GitHub Actions settings:
+
+- Secrets: `DEPLOY_SSH_KEY`, `DEPLOY_KNOWN_HOSTS`
+- Variables: `DEPLOY_HOST`, `DEPLOY_USER`, `DEPLOY_PORT`, `DEPLOY_PATH`
+
+It can also be started manually from the Actions tab with `workflow_dispatch`.
+
+### Manual deployment
+
 This project needs Node.js 18 or newer to build. Node.js 20 is recommended and declared in `.nvmrc` and `.node-version`.
 
 If your webserver has a modern Node.js version:
