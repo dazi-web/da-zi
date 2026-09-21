@@ -146,6 +146,8 @@ const skillGroups = [
       'Jira',
       'Webentwicklung',
       'Go',
+      'DDEV',
+      'Docker',
     ],
   },
   {
