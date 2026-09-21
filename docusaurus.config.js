@@ -2,7 +2,7 @@
 
 const config = {
   title: 'About Me',
-  tagline: 'Webentwickler für E-Commerce-Projekte',
+  tagline: 'Senior Webentwickler für E-Commerce-Projekte',
   favicon: 'img/aboutme-picture.jpg',
   url: 'https://da-zi.de',
   baseUrl: '/',

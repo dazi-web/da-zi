@@ -11,7 +11,7 @@ const jobs = [
     period: 'seit März 2019',
     duration: '7 Jahre und 3 Monate',
     dynamicStart: {year: 2019, month: 2},
-    role: 'Webentwickler',
+    role: 'Senior Webentwickler',
     type: 'Angestellt',
     status: 'Aktuell',
     mark: 'MW',
@@ -253,7 +253,7 @@ function About() {
   return (
     <Layout
       title="About me"
-      description="Webentwickler Profil mit Erfahrung in E-Commerce, OXID und Shopware">
+      description="Senior Webentwickler Profil mit Erfahrung in E-Commerce, OXID und Shopware">
       <main className={styles.page}>
         <section className={styles.intro}>
           <div className="container">
@@ -261,7 +261,7 @@ function About() {
               <div className={styles.introCopy}>
                 <p className={styles.kicker}>About me</p>
                 <p className={styles.name}>Danny Zimmer</p>
-                <h1>Webentwickler für E-Commerce-Projekte</h1>
+                <h1>Senior Webentwickler für E-Commerce-Projekte</h1>
                 <p className={styles.lead}>
                   Technische Realisierung, Shopentwicklung, Modulentwicklung und Templating
                   für OXID, Shopware und individuelle Webprojekte.
@@ -281,7 +281,7 @@ function About() {
                 <hr className={styles.profileDivider} />
                 <span>Aktuell</span>
                 <strong>maexware solutions GmbH</strong>
-                <small>Webentwickler, seit März 2019</small>
+                <small>Senior Webentwickler, seit März 2019</small>
                 <small>{currentDuration}</small>
               </div>
             </div>
