@@ -114,6 +114,7 @@ const skillGroups = [
       'Shopify',
       'Joomla',
       'WordPress',
+      'SAP Business One',
       'Kundenbetreuung',
     ],
   },
