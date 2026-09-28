@@ -114,6 +114,9 @@ const skillGroups = [
       'Online-Shops',
       'eCommerce Projekte',
       'OXID',
+      'OXID 6 & 7',
+      'OXID-Modulentwicklung',
+      'Payment-Module (Computop, PayPal)',
       'Shopware',
       'Shopify',
       'Joomla',
@@ -187,6 +190,24 @@ const skillGroups = [
       'Laravel AI',
       'MCP-Server',
     ],
+  },
+];
+
+const repos = [
+  {
+    name: 'plugin-oxid7-computop',
+    url: 'https://github.com/FATCHIP-GmbH/plugin-oxid7-computop',
+    description: 'Computop-Payment-Modul für OXID 7',
+  },
+  {
+    name: 'plugin-oxid6-computop',
+    url: 'https://github.com/FATCHIP-GmbH/plugin-oxid6-computop',
+    description: 'Computop-Payment-Modul für OXID 6',
+  },
+  {
+    name: 'paypal-module',
+    url: 'https://github.com/mediarex-de/paypal-module',
+    description: 'PayPal-Modul für OXID',
   },
 ];
 
@@ -352,6 +373,25 @@ function About() {
                     ))}
                   </div>
                 </section>
+              ))}
+            </div>
+
+            <div className={styles.sectionHeader}>
+              <h2>Open Source &amp; GitHub</h2>
+              <span>{repos.length} Repositories</span>
+            </div>
+
+            <div className={styles.skillsGrid}>
+              {repos.map((repo) => (
+                <a
+                  className={clsx(styles.skillGroup, styles.repoCard)}
+                  href={repo.url}
+                  key={repo.url}
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  <h3>{repo.name}</h3>
+                  <p>{repo.description}</p>
+                </a>
               ))}
             </div>
 
