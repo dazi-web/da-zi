@@ -240,7 +240,11 @@ function About() {
               <div className={styles.introCopy}>
                 <p className={styles.kicker}>About me</p>
                 <p className={styles.name}>Danny Zimmer</p>
-                <h1>Senior Webentwickler für E-Commerce-Projekte</h1>
+                <h1>
+                  Senior Webentwickler
+                  <br />
+                  für E-Commerce-Projekte
+                </h1>
                 <p className={styles.lead}>
                   Technische Realisierung, Shopentwicklung, Modulentwicklung und Templating
                   für OXID, Shopware und individuelle Webprojekte.

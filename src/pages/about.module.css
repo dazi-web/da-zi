@@ -4,7 +4,7 @@
 .introGrid { align-items: center; display: grid; gap: 3rem; grid-template-columns: minmax(0, 1fr) minmax(16rem, 20rem); }
 .introCopy { max-width: 46rem; }
 .kicker { color: var(--ifm-color-primary); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; margin: 0 0 0.75rem; text-transform: uppercase; }
-.intro h1 { font-size: clamp(2.25rem, 5vw, 3.75rem); line-height: 1.1; margin: 0; max-width: 18ch; }
+.intro h1 { font-size: clamp(2.1rem, 4.2vw, 3.25rem); line-height: 1.1; margin: 0; }
 .name { color: var(--ifm-color-emphasis-700); font-size: 1.15rem; font-weight: 700; margin: 0 0 0.35rem; }
 .lead { color: var(--ifm-color-emphasis-700); font-size: 1.1rem; line-height: 1.55; margin: 1rem 0 0; max-width: 40rem; }
 .heroLinks { align-items: center; display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.25rem; }
