@@ -381,7 +381,7 @@ function About() {
 
             <div className={styles.sectionHeader}>
               <h2>Open Source &amp; GitHub</h2>
-              <span>{repos.length} Repositories</span>
+              <span>{repos.length} Projekte mit Mitwirkung</span>
             </div>
 
             <div className={styles.skillsGrid}>
