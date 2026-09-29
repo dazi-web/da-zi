@@ -89,23 +89,25 @@
 
 @media print {
   .intro { padding: 0 0 1rem; }
-  .introGrid { align-items: start; gap: 1.5rem; grid-template-columns: minmax(0, 1fr) 7rem; }
-  .intro h1 { font-size: 2rem; }
+  .introGrid { display: block; }
+  .profileBox { display: none; }
+  .intro h1 { font-size: 2.3rem; max-width: none; }
   .lead { font-size: 0.95rem; margin-top: 0.5rem; }
   .heroLinks { margin-top: 0.75rem; }
-  .profileBox, .stat, .contactBox, .skillGroup, .job { background: #fff; box-shadow: none; }
-  .profileBox { padding: 0.5rem; }
-  .profileImage { margin-bottom: 0.5rem; }
+  .heroLinks span { display: none; }
+  .stat, .contactBox, .skillGroup, .job { background: #fff; box-shadow: none; }
   .content { padding-bottom: 0; }
-  .statsGrid { grid-template-columns: repeat(5, minmax(0, 1fr)); margin-bottom: 1rem; }
+  .statsGrid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 1rem; }
   .stat { padding: 0.5rem; }
   .contactBox { margin-bottom: 1rem; padding: 0.75rem; }
+  .contactButton { display: none; }
   .sectionHeader { margin: 1.25rem 0 0.6rem; }
-  .skillsGrid { gap: 0.5rem; }
+  .skillsGrid { gap: 0.5rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .skillGroup { break-inside: avoid; padding: 0.65rem; }
-  .skillMore > .skillList { display: flex; margin-top: 0.4rem; }
+  .skillMore { display: block; }
+  .skillMore > .skillList { display: flex !important; margin-top: 0.4rem; }
   .skillMore summary { display: none; }
   .job { break-inside: avoid; padding: 0.65rem; }
-  .more > p { display: block; }
+  .more > p { display: block !important; }
   .more summary { display: none; }
 }
