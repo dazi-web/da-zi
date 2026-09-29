@@ -249,6 +249,9 @@ function About() {
                   <a href="https://github.com/dazi-web/" rel="noopener noreferrer" target="_blank">
                     GitHub
                   </a>
+                  <button className={styles.printButton} type="button" onClick={() => window.print()}>
+                    Drucken
+                  </button>
                   <span>Erstellt mit Docusaurus</span>
                 </div>
               </div>
