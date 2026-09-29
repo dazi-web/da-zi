@@ -33,8 +33,8 @@ const config = {
   themeConfig: {
     image: 'img/aboutme-picture.jpg',
     colorMode: {
-      defaultMode: 'dark',
-      respectPrefersColorScheme: false,
+      defaultMode: 'light',
+      respectPrefersColorScheme: true,
     },
     navbar: {
       title: 'Danny Zimmer',

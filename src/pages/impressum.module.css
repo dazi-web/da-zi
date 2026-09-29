@@ -1,85 +1,10 @@
-.page {
-  color: #1d2528;
-}
-
-.hero {
-  padding: clamp(4rem, 8vw, 7rem) 0 2rem;
-}
-
-.kicker {
-  color: #256d85;
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.16em;
-  margin: 0 0 1rem;
-  text-transform: uppercase;
-}
-
-.hero h1 {
-  color: #162124;
-  font-size: clamp(2.8rem, 7vw, 5.6rem);
-  line-height: 0.95;
-  margin: 0;
-}
-
-.content {
-  padding: 0 0 clamp(4rem, 8vw, 7rem);
-}
-
-.panel {
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(30, 41, 59, 0.1);
-  border-radius: 8px;
-  max-width: 48rem;
-  padding: clamp(1.4rem, 3vw, 2rem);
-}
-
-.panel h2 {
-  color: #172225;
-  font-size: clamp(1.25rem, 2vw, 1.55rem);
-  margin: 0 0 0.8rem;
-}
-
-.panel h2:not(:first-child) {
-  margin-top: 2rem;
-}
-
-.panel address,
-.panel p {
-  color: #4b5b60;
-  font-style: normal;
-  line-height: 1.7;
-  margin: 0;
-}
-
-.mailButton {
-  background: transparent;
-  border: 0;
-  color: #256d85;
-  cursor: pointer;
-  font: inherit;
-  font-weight: 800;
-  padding: 0;
-  text-decoration: underline;
-  text-underline-offset: 0.18em;
-}
-
-.mailButton:hover {
-  color: #2b7993;
-}
-
-html[data-theme='dark'] .page,
-html[data-theme='dark'] .hero h1,
-html[data-theme='dark'] .panel h2 {
-  color: #edf4f4;
-}
-
-html[data-theme='dark'] .panel {
-  background: rgba(24, 33, 36, 0.78);
-  border-color: rgba(255, 255, 255, 0.09);
-}
-
-html[data-theme='dark'] .panel address,
-html[data-theme='dark'] .panel p {
-  color: #aebcbd;
-}
+.page { color: var(--ifm-font-color-base); }
+.hero { padding: 2.5rem 0 1.5rem; }
+.kicker { color: var(--ifm-color-primary); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; margin: 0 0 0.5rem; text-transform: uppercase; }
+.hero h1 { font-size: 2.5rem; margin: 0; }
+.content { padding: 0 0 4rem; }
+.panel { background: var(--ifm-background-surface-color); border: 1px solid var(--ifm-color-emphasis-200); border-radius: var(--ifm-card-border-radius); max-width: 42rem; padding: 1.25rem; }
+.panel h2 { font-size: 1.2rem; margin: 0 0 0.5rem; }
+.panel h2:not(:first-child) { margin-top: 1.5rem; }
+.panel address, .panel p { color: var(--ifm-color-emphasis-700); font-style: normal; line-height: 1.6; margin: 0; }
+.mailButton { background: transparent; border: 0; color: var(--ifm-color-primary); cursor: pointer; font: inherit; padding: 0; text-decoration: underline; text-underline-offset: 0.15em; }
