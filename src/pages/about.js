@@ -95,7 +95,7 @@ const skillGroups = [
       'Payment-Module',
       'Schnittstellen & Datensynchronisation',
     ],
-    more: ['Shopify', 'Joomla', 'WordPress', 'SAP Business One', 'Afterbuy', 'PayPal', 'GoCardless', 'SEPA-Lastschrift', 'PDF-Generierung'],
+    more: ['Shopify', 'Joomla', 'WordPress', 'SAP Business One', 'Afterbuy', 'PayPal', 'Unzer', 'Adyen', 'Amazon Pay', 'Mollie', 'GoCardless', 'SEPA-Lastschrift', 'PDF-Generierung'],
   },
   {
     title: 'Backend & Architektur',
@@ -139,6 +139,21 @@ const repos = [
     name: 'paypal-module',
     url: 'https://github.com/mediarex-de/paypal-module',
     description: 'PayPal-Modul für OXID',
+  },
+  {
+    name: 'unzer-module',
+    url: 'https://github.com/OXID-eSales/unzer-module',
+    description: 'Unzer-Modul für OXID',
+  },
+  {
+    name: 'adyen-module',
+    url: 'https://github.com/OXID-eSales/adyen-module',
+    description: 'Adyen-Modul für OXID',
+  },
+  {
+    name: 'amazon-pay-module',
+    url: 'https://github.com/OXID-eSales/amazon-pay-module',
+    description: 'Amazon-Pay-Modul für OXID',
   },
 ];
 
