@@ -86,113 +86,41 @@ const stats = [
 
 const skillGroups = [
   {
-    title: 'Backend & Architektur',
-    skills: [
-      'PHP',
-      'OOP',
-      'Backend-Entwicklung',
-      'Symfony Frameworks',
-      'Laravel',
-      'LAMP',
-      'REST',
-      'SOAP',
-      'WSDL',
-      'SOA',
-      'Design-Pattern',
-      'Unit Testing',
-      'Technische Dokumentation',
-      'Laravel Fortify & Sanctum',
-      'Rollen & Rechte',
-      'Multi-Tenant-SaaS',
-      'PHPUnit',
-    ],
-  },
-  {
     title: 'E-Commerce & Shopsysteme',
     skills: [
-      'E-Commerce',
-      'Online-Shops',
-      'eCommerce Projekte',
-      'OXID',
       'OXID 6 & 7',
       'OXID-Modulentwicklung',
-      'Payment-Module (Computop, PayPal)',
       'Shopware',
-      'Shopify',
-      'Joomla',
-      'WordPress',
-      'SAP Business One',
-      'pixi (Descartes WMS)',
-      'Afterbuy',
+      'E-Commerce',
+      'Payment-Module',
       'Schnittstellen & Datensynchronisation',
-      'PayPal',
-      'GoCardless',
-      'SEPA-Lastschrift',
-      'PDF-Generierung',
-      'Kundenbetreuung',
     ],
+    more: ['Shopify', 'Joomla', 'WordPress', 'SAP Business One', 'Afterbuy', 'PayPal', 'GoCardless', 'SEPA-Lastschrift', 'PDF-Generierung'],
+  },
+  {
+    title: 'Backend & Architektur',
+    skills: ['PHP', 'Laravel', 'Symfony', 'REST', 'OOP', 'Unit Testing', 'Rollen & Rechte'],
+    more: ['LAMP', 'SOAP', 'WSDL', 'SOA', 'Design-Pattern', 'Technische Dokumentation', 'Laravel Fortify & Sanctum', 'Multi-Tenant-SaaS', 'PHPUnit'],
   },
   {
     title: 'Frontend & Templates',
-    skills: [
-      'JavaScript',
-      'jQuery',
-      'Ajax',
-      'Angular',
-      'Node.js',
-      'Frontend Entwicklung',
-      'Responsive Webdesign',
-      'HTML',
-      'CSS3',
-      'Less',
-      'Smarty',
-      'Tailwind CSS',
-      'Vite',
-    ],
+    skills: ['JavaScript', 'HTML', 'CSS3', 'Responsive Webdesign', 'Angular', 'Node.js', 'Vite'],
+    more: ['jQuery', 'Ajax', 'Frontend Entwicklung', 'Less', 'Smarty', 'Tailwind CSS'],
   },
   {
     title: 'Daten, Suche & Betrieb',
-    skills: [
-      'MySQL',
-      'SQL',
-      'XML',
-      'Apache Solr',
-      'Git',
-      'Linux',
-      'Jira',
-      'Webentwicklung',
-      'Go',
-      'DDEV',
-      'Docker',
-      'GitHub Actions',
-      'DSGVO & Datenschutz',
-    ],
-  },
-  {
-    title: 'Mobile',
-    skills: [
-      'Android',
-      'Kotlin',
-      'Jetpack Compose',
-      'Bluetooth Low Energy',
-      'Health Connect',
-    ],
+    skills: ['Git', 'Docker', 'MySQL', 'SQL', 'Linux', 'GitHub Actions', 'Apache Solr'],
+    more: ['XML', 'Jira', 'Go', 'DDEV', 'DSGVO & Datenschutz'],
   },
   {
     title: 'AI-gestützte Entwicklung',
-    skills: [
-      'Codex',
-      'Claude',
-      'Prompting',
-      'AI Code Reviews',
-      'AI Debugging',
-      'Testgenerierung',
-      'Refactoring mit AI',
-      'Dokumentation mit AI',
-      'Workflow-Automatisierung',
-      'Laravel AI',
-      'MCP-Server',
-    ],
+    skills: ['Codex', 'Claude', 'Prompting', 'AI Code Reviews', 'AI Debugging', 'Testgenerierung'],
+    more: ['Refactoring mit AI', 'Dokumentation mit AI', 'Workflow-Automatisierung', 'Laravel AI', 'MCP-Server'],
+  },
+  {
+    title: 'Mobile',
+    skills: ['Kotlin', 'Android', 'Jetpack Compose', 'Bluetooth Low Energy'],
+    more: ['Health Connect'],
   },
 ];
 
@@ -375,6 +303,18 @@ function About() {
                       </span>
                     ))}
                   </div>
+                  {group.more?.length > 0 && (
+                    <details className={styles.skillMore}>
+                      <summary>Weitere Skills ({group.more.length})</summary>
+                      <div className={styles.skillList}>
+                        {group.more.map((skill) => (
+                          <span className={styles.skill} key={skill}>
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+                    </details>
+                  )}
                 </section>
               ))}
             </div>

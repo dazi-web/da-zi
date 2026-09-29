@@ -6,6 +6,7 @@ const config = {
   favicon: 'img/aboutme-picture.jpg',
   url: 'https://da-zi.de',
   baseUrl: '/',
+  trailingSlash: true,
   organizationName: 'danny-zimmer',
   projectName: 'about-me',
   onBrokenLinks: 'throw',
