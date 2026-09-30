@@ -155,7 +155,21 @@ const repos = [
     url: 'https://github.com/OXID-eSales/amazon-pay-module',
     description: 'Amazon-Pay-Modul für OXID',
   },
+  {
+    name: 'reb-da11',
+    url: 'https://github.com/dazi-web/reb-da11',
+    description: 'Reader und Writer für REB-VB 23.003 DA11 (Aufmaß) in PHP',
+    own: true,
+  },
+  {
+    name: 'ddev-oxid',
+    url: 'https://github.com/dazi-web/ddev-oxid',
+    description: 'DDEV-Add-on zur automatischen Installation und Einrichtung des OXID eShop',
+    own: true,
+  },
 ];
+
+const ownRepoCount = repos.filter((repo) => repo.own).length;
 
 function formatDurationFrom(start) {
   const now = new Date();
@@ -343,7 +357,10 @@ function About() {
 
             <div className={styles.sectionHeader}>
               <h2>Open Source &amp; GitHub</h2>
-              <span>{repos.length} Projekte mit Mitwirkung</span>
+              <span>
+                {repos.filter((repo) => !repo.own).length} Projekte mit Mitwirkung
+                {ownRepoCount > 0 && ` · ${ownRepoCount} ${ownRepoCount === 1 ? 'eigenes Projekt' : 'eigene Projekte'}`}
+              </span>
             </div>
 
             <div className={styles.skillsGrid}>
@@ -354,7 +371,10 @@ function About() {
                   key={repo.url}
                   rel="noopener noreferrer"
                   target="_blank">
-                  <h3>{repo.name}</h3>
+                  <h3>
+                    {repo.name}
+                    {repo.own && <span className={styles.ownBadge}>Eigenes Projekt</span>}
+                  </h3>
                   <p>{repo.description}</p>
                 </a>
               ))}
