@@ -167,6 +167,12 @@ const repos = [
     description: 'DDEV-Add-on zur automatischen Installation und Einrichtung des OXID eShop',
     own: true,
   },
+  {
+    name: 'oxid2fa',
+    url: 'https://github.com/dazi-web/oxid2fa',
+    description: 'TOTP-Zwei-Faktor-Authentifizierung für OXID-eShop-Administratoren',
+    own: true,
+  },
 ];
 
 const ownRepoCount = repos.filter((repo) => repo.own).length;
