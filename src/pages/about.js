@@ -129,31 +129,49 @@ const repos = [
     name: 'plugin-oxid7-computop',
     url: 'https://github.com/FATCHIP-GmbH/plugin-oxid7-computop',
     description: 'Computop-Payment-Modul für OXID 7',
+    commits: 137,
+    period: 'Jul. – Dez. 2024',
+    contribution: 'Konfiguration und Admin-UI, iDEAL, API-Log und Logging, Kreditkarte in drei Modi (Iframe, Silent, HPP), Autocapture sowie Cookie- und Session-Handling.',
   },
   {
     name: 'plugin-oxid6-computop',
     url: 'https://github.com/FATCHIP-GmbH/plugin-oxid6-computop',
     description: 'Computop-Payment-Modul für OXID 6',
+    commits: 13,
+    period: 'Jan. – Feb. 2025',
+    contribution: 'Initialer Aufbau der Smarty-Variante, Downgrade von HPP und Iframe-Kreditkarte, API-Log im Backend, Bestell-Tab sowie Versand- und Refund-Korrekturen.',
   },
   {
     name: 'paypal-module',
-    url: 'https://github.com/mediarex-de/paypal-module',
+    url: 'https://github.com/OXID-eSales/paypal-module',
     description: 'PayPal-Modul für OXID',
+    commits: 32,
+    period: 'Apr. – Sep. 2024',
+    contribution: 'Google Pay und Apple Pay, SCA, Vaulting-Prüfungen, Onboarding, Express-Redirect und Logger-Anpassungen.',
   },
   {
     name: 'unzer-module',
     url: 'https://github.com/OXID-eSales/unzer-module',
     description: 'Unzer-Modul für OXID',
+    commits: 7,
+    period: 'Feb. – Mai 2024',
+    contribution: 'Teilstorno für Rechnung, Webhook-Handling, Migration für den Unique-Index und Temp-Order-Model mit Statushandling.',
   },
   {
     name: 'adyen-module',
     url: 'https://github.com/OXID-eSales/adyen-module',
     description: 'Adyen-Modul für OXID',
+    commits: 8,
+    period: 'Feb. – Jun. 2024',
+    contribution: 'Apple-Pay-Prüfung, Doppelprüfung der Zahlung über die PSP-Referenz und Handling fehlgeschlagener Refunds.',
   },
   {
     name: 'amazon-pay-module',
     url: 'https://github.com/OXID-eSales/amazon-pay-module',
     description: 'Amazon-Pay-Modul für OXID',
+    commits: 2,
+    period: 'Jun. 2024',
+    contribution: 'Übernahme von Funktionen aus der OXID-7-Version.',
   },
   {
     name: 'reb-da11',
@@ -371,18 +389,24 @@ function About() {
 
             <div className={styles.skillsGrid}>
               {repos.map((repo) => (
-                <a
-                  className={clsx(styles.skillGroup, styles.repoCard)}
-                  href={repo.url}
-                  key={repo.url}
-                  rel="noopener noreferrer"
-                  target="_blank">
+                <article className={clsx(styles.skillGroup, styles.repoCard)} key={repo.url}>
                   <h3>
-                    {repo.name}
+                    <a href={repo.url} rel="noopener noreferrer" target="_blank">
+                      {repo.name}
+                    </a>
                     {repo.own && <span className={styles.ownBadge}>Eigenes Projekt</span>}
                   </h3>
                   <p>{repo.description}</p>
-                </a>
+                  {repo.commits && (
+                    <>
+                      <div className={styles.repoMeta}>
+                        <span>{repo.commits} Commits</span>
+                        <span>{repo.period}</span>
+                      </div>
+                      <p className={styles.repoContribution}>{repo.contribution}</p>
+                    </>
+                  )}
+                </article>
               ))}
             </div>
 
