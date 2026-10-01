@@ -99,7 +99,7 @@ const skillGroups = [
   },
   {
     title: 'Backend & Architektur',
-    skills: ['PHP', 'Laravel', 'Symfony', 'REST', 'OOP', 'Unit Testing', 'Rollen & Rechte'],
+    skills: ['PHP', 'Laravel', 'Symfony', 'REST', 'GraphQL', 'OOP', 'Unit Testing', 'Rollen & Rechte'],
     more: ['LAMP', 'SOAP', 'WSDL', 'SOA', 'Design-Pattern', 'Technische Dokumentation', 'Laravel Fortify & Sanctum', 'Multi-Tenant-SaaS', 'PHPUnit'],
   },
   {
