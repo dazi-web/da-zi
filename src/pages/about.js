@@ -279,7 +279,8 @@ function ContactBox() {
 }
 
 function About() {
-  const profileImage = useBaseUrl('img/aboutme-picture.jpg');
+  const profileImage = useBaseUrl('img/danny-zimmer.jpg');
+  const profileImageHover = useBaseUrl('img/aboutme-picture.jpg');
   const currentDuration = useCurrentDuration(jobs[0].dynamicStart, jobs[0].duration);
 
   return (
@@ -313,7 +314,10 @@ function About() {
                 </div>
               </div>
               <div className={styles.profileBox}>
-                <img src={profileImage} alt="Danny Zimmer" className={styles.profileImage} />
+                <div className={styles.profileImageWrap}>
+                  <img src={profileImage} alt="Danny Zimmer" className={styles.profileImage} />
+                  <img src={profileImageHover} alt="" aria-hidden="true" className={styles.profileImageHover} loading="lazy" />
+                </div>
                 <span>Profil</span>
                 <strong>Danny Zimmer</strong>
                 <small>Webentwickler für E-Commerce, OXID, Shopware und O3</small>
