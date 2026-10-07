@@ -1,0 +1,76 @@
+// @ts-check
+
+const config = {
+  title: 'About Me',
+  tagline: 'Senior Webentwickler für E-Commerce-Projekte',
+  favicon: 'img/aboutme-picture.jpg',
+  url: 'https://da-zi.de',
+  baseUrl: '/',
+  trailingSlash: true,
+  organizationName: 'danny-zimmer',
+  projectName: 'about-me',
+  onBrokenLinks: 'throw',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
+  i18n: {
+    defaultLocale: 'de',
+    locales: ['de'],
+  },
+  presets: [
+    [
+      'classic',
+      {
+        docs: false,
+        blog: false,
+        theme: {
+          customCss: './src/css/custom.css',
+        },
+      },
+    ],
+  ],
+  themeConfig: {
+    image: 'img/aboutme-picture.jpg',
+    colorMode: {
+      defaultMode: 'light',
+      respectPrefersColorScheme: true,
+    },
+    navbar: {
+      title: 'Danny Zimmer',
+      logo: {
+        alt: 'Danny Zimmer',
+        src: 'img/aboutme-picture.jpg',
+      },
+      items: [
+        {
+          to: '/about',
+          label: 'About',
+          position: 'right',
+        },
+        {
+          to: '/impressum',
+          label: 'Impressum',
+          position: 'right',
+        },
+      ],
+    },
+    footer: {
+      style: 'light',
+      links: [
+        {
+          items: [
+            {
+              label: 'Impressum',
+              to: '/impressum',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Danny Zimmer.`,
+    },
+  },
+};
+
+module.exports = config;

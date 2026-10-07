@@ -1,0 +1,12 @@
+node_modules/
+.docusaurus/
+build/
+.env
+.env.local
+.DS_Store
+.ddev/.global_commands
+.ddev/.homeadditions
+.ddev/.importdb*
+.ddev/.downloads
+.ddev/.git
+.ddev/.ssh-auth.sock

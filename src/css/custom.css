@@ -1,0 +1,112 @@
+:root {
+  --ifm-color-primary: #256d85;
+  --ifm-color-primary-dark: #206178;
+  --ifm-color-primary-darker: #1d5b70;
+  --ifm-color-primary-darkest: #174b5d;
+  --ifm-color-primary-light: #2b7993;
+  --ifm-color-primary-lighter: #2e7f99;
+  --ifm-color-primary-lightest: #3b91ad;
+  --ifm-font-family-base: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --ifm-heading-font-family: inherit;
+  --ifm-container-width: 1140px;
+  --ifm-navbar-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  --ifm-footer-background-color: #f5f6f7;
+}
+
+html[data-theme='dark'] {
+  --ifm-background-color: #1b1b1d;
+  --ifm-background-surface-color: #242426;
+  --ifm-navbar-background-color: #1b1b1d;
+  --ifm-footer-background-color: #242426;
+}
+
+body {
+  background: var(--ifm-background-color);
+}
+
+.navbar {
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.navbar__logo img {
+  border-radius: 50%;
+}
+
+.footer {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  padding: 1rem 0;
+  font-size: 0.875rem;
+}
+
+.footer > .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+}
+
+.footer__links,
+.footer__bottom {
+  margin: 0;
+}
+
+.footer .row.footer__links {
+  display: block;
+}
+
+.footer__col {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__title:empty {
+  display: none;
+}
+
+.footer__items {
+  margin: 0;
+}
+
+.footer__link-item,
+.footer__copyright {
+  line-height: 1.5;
+}
+
+.footer__link-item {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.footer__copyright {
+  color: var(--ifm-color-emphasis-600);
+}
+
+@media print {
+  :root {
+    --ifm-background-color: #fff;
+    --ifm-background-surface-color: #fff;
+    --ifm-color-emphasis-100: #f5f5f5;
+    --ifm-color-emphasis-200: #d9d9d9;
+  }
+
+  .navbar,
+  .footer,
+  .theme-back-to-top-button,
+  .printButton {
+    display: none !important;
+  }
+
+  body {
+    color: #111;
+    font-size: 10pt;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  @page {
+    margin: 1.5cm;
+  }
+}
